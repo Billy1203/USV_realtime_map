@@ -77,8 +77,8 @@ simulator/usv_worlds/worlds/usv.world: /home/yiheng/Projects/USV_realtime_map/si
 	cd /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds && /home/yiheng/Projects/USV_realtime_map/simulator/build/catkin_generated/env_cached.sh xacro -o /home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/usv_worlds/worlds/usv.world worlds/usv.world.xacro
 
 simulator/usv_worlds/worlds/usv_fast.world: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/worlds/usv_fast.world.xacro
-simulator/usv_worlds/worlds/usv_fast.world: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/worlds/simple_obstacles.xacro
 simulator/usv_worlds/worlds/usv_fast.world: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/worlds/simple_box.xacro
+simulator/usv_worlds/worlds/usv_fast.world: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/worlds/simple_obstacles.xacro
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "xacro: generating worlds/usv_fast.world from worlds/usv_fast.world.xacro"
 	cd /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds && /home/yiheng/Projects/USV_realtime_map/simulator/build/catkin_generated/env_cached.sh xacro -o /home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/usv_worlds/worlds/usv_fast.world worlds/usv_fast.world.xacro
 

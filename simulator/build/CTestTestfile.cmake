@@ -7,7 +7,6 @@
 subdirs("gtest")
 subdirs("usv_msgs")
 subdirs("perception/map_generator")
-subdirs("usv_control/otter_control")
 subdirs("perception/sensing")
 subdirs("simulator/usv_gazebo_plugins")
 subdirs("usv_launch")

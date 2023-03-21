@@ -1,22 +1,22 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-A86KWD
+Change Dir: /home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-la3wp7
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_799af/fast && /usr/bin/make  -f CMakeFiles/cmTC_799af.dir/build.make CMakeFiles/cmTC_799af.dir/build
-make[1]: Entering directory '/home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-A86KWD'
-Building C object CMakeFiles/cmTC_799af.dir/src.c.o
-/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_799af.dir/src.c.o -c /home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-A86KWD/src.c
-Linking C executable cmTC_799af
-/home/yiheng/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_799af.dir/link.txt --verbose=1
-/usr/bin/cc -rdynamic CMakeFiles/cmTC_799af.dir/src.c.o -o cmTC_799af 
-/usr/bin/ld: CMakeFiles/cmTC_799af.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1cb77/fast && /usr/bin/make  -f CMakeFiles/cmTC_1cb77.dir/build.make CMakeFiles/cmTC_1cb77.dir/build
+make[1]: Entering directory '/home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-la3wp7'
+Building C object CMakeFiles/cmTC_1cb77.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_1cb77.dir/src.c.o -c /home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-la3wp7/src.c
+Linking C executable cmTC_1cb77
+/home/yiheng/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cb77.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_1cb77.dir/src.c.o -o cmTC_1cb77 
+/usr/bin/ld: CMakeFiles/cmTC_1cb77.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
 /usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_799af.dir/build.make:99: cmTC_799af] Error 1
-make[1]: Leaving directory '/home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-A86KWD'
-make: *** [Makefile:127: cmTC_799af/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_1cb77.dir/build.make:99: cmTC_1cb77] Error 1
+make[1]: Leaving directory '/home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-la3wp7'
+make: *** [Makefile:127: cmTC_1cb77/fast] Error 2
 
 
 Source file was:
@@ -42,20 +42,20 @@ int main(void)
 
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-YCpPmF
+Change Dir: /home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-Y3JiO7
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_2df94/fast && /usr/bin/make  -f CMakeFiles/cmTC_2df94.dir/build.make CMakeFiles/cmTC_2df94.dir/build
-make[1]: Entering directory '/home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-YCpPmF'
-Building C object CMakeFiles/cmTC_2df94.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_2df94.dir/CheckFunctionExists.c.o -c /home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-YCpPmF/CheckFunctionExists.c
-Linking C executable cmTC_2df94
-/home/yiheng/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2df94.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_2df94.dir/CheckFunctionExists.c.o -o cmTC_2df94  -lpthreads 
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_67d61/fast && /usr/bin/make  -f CMakeFiles/cmTC_67d61.dir/build.make CMakeFiles/cmTC_67d61.dir/build
+make[1]: Entering directory '/home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-Y3JiO7'
+Building C object CMakeFiles/cmTC_67d61.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_67d61.dir/CheckFunctionExists.c.o -c /home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-Y3JiO7/CheckFunctionExists.c
+Linking C executable cmTC_67d61
+/home/yiheng/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67d61.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_67d61.dir/CheckFunctionExists.c.o -o cmTC_67d61  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_2df94.dir/build.make:99: cmTC_2df94] Error 1
-make[1]: Leaving directory '/home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-YCpPmF'
-make: *** [Makefile:127: cmTC_2df94/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_67d61.dir/build.make:99: cmTC_67d61] Error 1
+make[1]: Leaving directory '/home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles/CMakeScratch/TryCompile-Y3JiO7'
+make: *** [Makefile:127: cmTC_67d61/fast] Error 2
 
 
 
