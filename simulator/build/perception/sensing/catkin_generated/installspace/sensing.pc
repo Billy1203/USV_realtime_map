@@ -1,8 +1,0 @@
-prefix=/home/yiheng/Projects/USV_realtime_map/simulator/install
-
-Name: sensing
-Description: Description of sensing
-Version: 0.1.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: roscpp roslib pcl_ros

@@ -1,8 +1,0 @@
-prefix=/home/yiheng/Projects/USV_realtime_map/simulator/devel
-
-Name: otter_control
-Description: Description of otter_control
-Version: 0.0.0
-Cflags: -I/home/yiheng/Projects/USV_realtime_map/simulator/src/usv_control/otter_control/include
-Libs: -L${prefix}/lib 
-Requires: 

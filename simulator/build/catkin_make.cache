@@ -1,2 +1,0 @@
-perception/map_generator:perception/sensing:simulator/otter_description:simulator/otter_gazebo:simulator/usv_gazebo_plugins:simulator/usv_worlds:usv_launch:usv_msgs
--DCATKIN_DEVEL_PREFIX=/home/yiheng/Projects/USV_realtime_map/simulator/devel -DCMAKE_INSTALL_PREFIX=/home/yiheng/Projects/USV_realtime_map/simulator/install -G Unix Makefiles
