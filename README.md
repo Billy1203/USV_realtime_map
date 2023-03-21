@@ -4,7 +4,7 @@
 
 **Description**
 
-Build ESDF map in USV simulator in real-time. ESDF method forked [FIESTA](https://github.com/HKUST-Aerial-Robotics/FIESTA), simulator forked from TaoHuang@HiZJU.
+Build ESDF map in USV simulator in real-time. ESDF method forked [FIESTA](https://github.com/HKUST-Aerial-Robotics/FIESTA), simulator forked from [otter_simulator](https://github.com/jhlenes/usv_simulator) and TaoHuang@HiZJU. Link of Otter USV [here](https://www.maritimerobotics.com/otter), 
 
 Topic 1: `/USV_0/lidar_3d/points`, PointCloud2
 
