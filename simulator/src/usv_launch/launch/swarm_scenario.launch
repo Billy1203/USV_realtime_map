@@ -1,0 +1,32 @@
+<launch>
+    <!-- topic of your odometry such as VIO or LIO -->
+    <arg name="odom_topic" value="p3d" />
+
+    <!-- gazebo world -->
+    <include file="$(find otter_gazebo)/launch/gazebo_world.launch">
+        <arg name="world" value="$(find usv_worlds)/worlds/usv.world"/>
+        <arg name="gui" value="true"/>
+        <arg name="verbose" value="false"/>
+    </include>
+
+    <!-- usv0 spawner -->
+    <include file="$(find usv_launch)/launch/usv_spawner.launch">
+        <arg name="usv_id" value="0"/>
+        <arg name="init_x" value="-5.0"/>
+        <arg name="init_y" value="-5.0"/>
+        <arg name="init_z" value="0.1"/>
+        <arg name="Y" value="0" />
+        <arg name="odom_topic" value="$(arg odom_topic)"/>
+    </include>
+
+    <include file="$(find usv_launch)/launch/usv_spawner.launch">
+        <arg name="usv_id" value="1"/>
+        <arg name="init_x" value="8.0"/>
+        <arg name="init_y" value="-5.0"/>
+        <arg name="init_z" value="0.1"/>
+        <arg name="Y" value="0" />
+        <arg name="odom_topic" value="$(arg odom_topic)"/>
+    </include>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find otter_gazebo)/launch/default.rviz" required="true" />
+</launch>

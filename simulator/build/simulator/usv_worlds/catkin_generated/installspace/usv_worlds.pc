@@ -1,0 +1,8 @@
+prefix=/home/yiheng/Projects/simulator/install
+
+Name: usv_worlds
+Description: Description of usv_worlds
+Version: 0.3.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: xacro

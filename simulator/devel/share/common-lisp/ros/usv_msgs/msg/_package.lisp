@@ -1,0 +1,15 @@
+(cl:defpackage usv_msgs-msg
+  (:use )
+  (:export
+   "<MPCCOMMAND>"
+   "MPCCOMMAND"
+   "<POLYNOMIALTRAJECTORY>"
+   "POLYNOMIALTRAJECTORY"
+   "<POSITIONCOMMAND>"
+   "POSITIONCOMMAND"
+   "<SPEEDCOURSE>"
+   "SPEEDCOURSE"
+   "<THRUSTCOMMAND>"
+   "THRUSTCOMMAND"
+  ))
+

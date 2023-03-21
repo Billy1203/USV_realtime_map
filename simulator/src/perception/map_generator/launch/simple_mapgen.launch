@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+
+	<arg name="odom_topic" default="p3d" />
+	<arg name="pub_obs_srv" default="pub_glb_obs" />
+	
+	<arg name="map_size_x" default="60.0"/>
+	<arg name="map_size_y" default="100.0"/>
+	<arg name="pcd_origin_x" default="0.0"/>
+	<arg name="pcd_origin_y" default="0.0"/>
+	<arg name="init_x" default="0.0"/> <!--robot site-->
+	<arg name="init_y" default="-21.0"/>
+	<arg name="obs_num" default="100"/>
+
+	<node pkg="map_generator" name="random_forest" type="random_forest" output="screen">    
+		<remap from="~odometry"   to="$(arg odom_topic)"/>
+		<remap from="~pub_glb_obs" to="$(arg pub_obs_srv)" />
+
+		<param name="init_state_x"   value="$(arg init_x)"/>
+		<param name="init_state_y"   value="$(arg init_y)"/>
+		<param name="map/x_size"     value="$(arg map_size_x)" />
+		<param name="map/y_size"     value="$(arg map_size_y)" />
+		<param name="map/origin_x"   value="$(arg pcd_origin_x)" />
+		<param name="map/origin_y"   value="$(arg pcd_origin_y)" />
+		<param name="map/obs_num"    value="$(arg obs_num)"/>    
+		<param name="map/circle_num" value="0"/>   
+		<param name="map/resolution" value="0.1"/>        
+		<param name="ObstacleShape/lower_rad" value="1.5"/>
+		<param name="ObstacleShape/upper_rad" value="5.0"/>
+		<param name="ObstacleShape/lower_hei" value="5.5"/>
+		<param name="ObstacleShape/upper_hei" value="5.5"/>        
+		<param name="CircleShape/lower_circle_rad" value="0.6"/>        
+		<param name="CircleShape/upper_circle_rad" value="5.0"/>        
+		<param name="sensing/rate"   value="1.0"/>        
+	</node>
+
+</launch>

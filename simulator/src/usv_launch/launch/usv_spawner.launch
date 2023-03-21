@@ -1,0 +1,121 @@
+<launch>
+    <arg name="usv_id"    default="0" />
+    <arg name="namespace" default="USV_$(arg usv_id)" />
+    <arg name="manual" default="false" />
+
+    <!-- topic of your odometry such as VIO or LIO -->
+    <arg name="odom_topic" default="p3d" />
+    <!-- topic of your localsense -->
+    <arg name="cloud_topic" default="pcl_node/cloud" />
+    <arg name="local_sense" default="20.0" />
+    
+    <!-- set map site and size -->
+    <arg name="map_size_x" default="100.0"/>
+	<arg name="map_size_y" default="100.0"/>
+    <arg name="map_origin_x" default="-50.0"/><!-- map coor origin-->
+	<arg name="map_origin_y" default="-50.0"/>
+    <arg name="inflate_length" default="0.8"/>
+
+    <!-- Initial USV location and attitude-->
+    <arg name="init_x" default="0.0" />
+    <arg name="init_y" default="-5.0" />
+    <arg name="init_z" default="0.0" />
+    <arg name="R" default="0" />
+    <arg name="P" default="0" />
+    <arg name="Y" default="0" />
+
+    <arg name="use_dubins_line" default="true" />
+    <arg name="vel_limit"  default="7.0" />
+	<arg name="acc_limit"  default="7.0" />
+    <arg name="jerk_limit"  default="7.0" />
+    <arg name="rho_time"  default="0.1" />
+	<arg name="radius_between_states"  default="7.0" />
+    <arg name="sampler_pos_hrz_var"    default="0.8" />
+    <arg name="sampler_vel_mag_mean"   default="4.0" />
+	<arg name="sampler_vel_mag_var"    default="1.0" />
+    <arg name="sampler_vel_dir_var"    default="0.2" />
+
+    <!-- Do you want to enable sensors? -->
+    <arg name="top_camera_enabled"   default="true" />
+    <arg name="gps_enabled"          default="true" />
+    <arg name="lidar_3d_enabled"     default="true" />
+    <arg name="imu_enabled"          default="true" />
+    <arg name="lidar_enabled"        default="false" />
+    <arg name="ground_truth_enabled" default="true" />
+
+    <group ns="/$(arg namespace)">
+        <!-- Load robot model -->
+        <arg name="urdf" default="$(find otter_gazebo)/urdf/otter_gazebo.urdf.xacro"/>
+        <param name="robot_description"
+            command="$(find xacro)/xacro $(arg urdf)
+            imu_enabled:=$(arg imu_enabled)
+            gps_enabled:=$(arg gps_enabled)
+            lidar_enabled:=$(arg lidar_enabled)
+            lidar_3d_enabled:=$(arg lidar_3d_enabled)
+            top_camera_enabled:=$(arg top_camera_enabled)
+            ground_truth_enabled:=$(arg ground_truth_enabled)" />
+
+        <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+        <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+                args="-x $(arg init_x) -y $(arg init_y) -z $(arg init_z)
+                      -R $(arg R) -P $(arg P) -Y $(arg Y)
+                      -urdf -param /$(arg namespace)/robot_description -model $(arg namespace)"/>
+
+        <!-- Publishes static transforms (bodylink, gps, imu, cameras, etc) to /tf -->
+        <node pkg="robot_state_publisher" type="robot_state_publisher" name="rob_st_pub" >
+            <param name="tf_prefix" value="$(arg namespace)"/>
+        </node>
+
+        <group unless="$(arg manual)">
+            <!-- global pointcloud -->
+            <node pkg="sensing" name="pcl_node" type="pcl_node" output="screen">
+                <remap from="~odometry" to="$(arg odom_topic)"/>
+                <remap from="~local_sensing" to="lidar_3d/points"/>
+                <remap from="~pcl_node/cloud" to="$(arg cloud_topic)"/>
+                <param name="namespace" value="$(arg namespace)"/>
+                <param name="sensor_range" value="$(arg local_sense)"/>
+            </node>
+        
+            <!-- planner -->
+
+
+            <!-- pid code need tidy up -->
+            <!-- <node pkg="otter_control" name="controller" type="controller" output="screen">
+                <remap from="~left_thrust_cmd" to="left_thrust_cmd" />
+                <remap from="~right_thrust_cmd" to="right_thrust_cmd" />
+                <remap from="~position_cmd" to="planning/pos_cmd" />
+                <remap from="~odom" to="$(arg odometry_topic)" />
+            </node> -->
+
+            <!-- MPC -->
+            <!-- <include file="$(find usv_mpc)/launch/control_mpc.launch">
+                <arg name="odom_topic" value="$(arg odom_topic)"/>
+                <arg name="traj_topic" value="planning/poly_traj"/>
+            </include> -->
+        </group>
+    
+        <!-- visualize plot -->
+        <!-- <node name="thr_plot" pkg="rqt_plot" type="rqt_plot" 
+            args="left_thrust_cmd right_thrust_cmd">
+        </node>
+        <node name="spd_plot" pkg="rqt_plot" type="rqt_plot" 
+            args="vel_all vel_u vel_v">
+        </node> -->
+
+        <group if="$(arg manual)">
+            <!-- RC -->
+            <node name="joy_node" pkg="joy" type="joy_node" output = "screen">
+                <param name="dev" value="/dev/input/js0"/>
+            </node>
+            <node name="joystick_node" pkg="sysid" type="joystick_node" output = "screen" >
+                <param name="namespace" value="$(arg namespace)"/>
+                <param name="scale_linear" value="0.9" />
+                <param name="scale_angular" value="0.9" />
+                <remap from="~left_thrust_cmd" to="left_thrust_cmd"/>
+                <remap from="~right_thrust_cmd" to="right_thrust_cmd"/>
+                <remap from="~joy" to="joy"/>
+                <remap from="~odom" to="$(arg odom_topic)"/>
+            </node>
+        </group>
+    </group>
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/yiheng/Projects/fiest/install
+
+Name: fiesta
+Description: Description of fiesta
+Version: 0.0.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

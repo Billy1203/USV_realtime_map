@@ -1,0 +1,8 @@
+prefix=/home/yiheng/Projects/simulator/devel
+
+Name: usv_launch
+Description: Description of usv_launch
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp

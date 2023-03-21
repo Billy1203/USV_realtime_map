@@ -1,0 +1,74 @@
+<launch>
+
+    <arg name="joy_dev" default="/dev/input/js0"/>
+
+    <arg name="usv_id"    default="0" />
+    <arg name="namespace" default="USV_$(arg usv_id)" />
+
+    <!-- Initial USV location and attitude-->
+    <arg name="init_x" default="-5.0" />
+    <arg name="init_y" default="-5.0" />
+    <arg name="init_z" default="0.0" />
+    <arg name="R" default="0" />
+    <arg name="P" default="0" />
+    <arg name="Y" default="0" />
+    
+    <!-- Do you want to enable sensors? -->
+    <arg name="top_camera_enabled"   default="false" />
+    <arg name="gps_enabled"          default="true" />
+    <arg name="lidar_3d_enabled"     default="true" />
+    <arg name="imu_enabled"          default="true" />
+    <arg name="lidar_enabled"        default="false" />
+    <arg name="ground_truth_enabled" default="true" />
+    
+    <!-- gazebo world -->
+    <include file="$(find otter_gazebo)/launch/gazebo_world.launch">
+        <arg name="world" value="$(find usv_worlds)/worlds/usv.world"/>
+        <arg name="gui" value="true"/>
+        <arg name="verbose" value="false"/>
+    </include>
+
+    <!-- usv0 spawner -->
+    <group ns="/$(arg namespace)">
+        <!-- Load robot model -->
+        <arg name="urdf" default="$(find otter_gazebo)/urdf/otter_gazebo.urdf.xacro"/>
+        <param name="robot_description"
+            command="$(find xacro)/xacro $(arg urdf)
+            imu_enabled:=$(arg imu_enabled)
+            gps_enabled:=$(arg gps_enabled)
+            lidar_enabled:=$(arg lidar_enabled)
+            lidar_3d_enabled:=$(arg lidar_3d_enabled)
+            top_camera_enabled:=$(arg top_camera_enabled)
+            ground_truth_enabled:=$(arg ground_truth_enabled)" />
+
+        <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+        <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+                args="-x $(arg init_x) -y $(arg init_y) -z $(arg init_z)
+                      -R $(arg R) -P $(arg P) -Y $(arg Y)
+                      -urdf -param /$(arg namespace)/robot_description -model $(arg namespace)"/>
+
+        <!-- Publishes static transforms (bodylink, gps, imu, cameras, etc) to /tf -->
+        <node pkg="robot_state_publisher" type="robot_state_publisher" name="rob_st_pub" >
+            <param name="tf_prefix" value="$(arg namespace)"/>
+        </node>
+
+        <!-- <node name="joy_node" pkg="joy" type="joy_node" output = "screen">
+            <param name="dev" value="$(arg joy_dev)"/>
+        </node>
+
+        <node name="joystick_node" pkg="sysid" type="joystick_node" output = "screen" >
+            <param name="scale_linear" value="0.8" />
+            <param name="scale_angular" value="0.8" />
+            <remap from="~left_thrust_cmd" to="left_thrust_cmd"/>
+            <remap from="~right_thrust_cmd" to="right_thrust_cmd"/>
+            <remap from="~joy" to="joy"/>
+        </node> -->
+
+        <!-- launch-prefix="xterm -e gdb -ex run - -args" -->
+        <!-- <node name="sysid_node" pkg="sysid" type="sysid_node" output = "screen" >
+            <remap from="~left_thrust_cmd" to="left_thrust_cmd"/>
+            <remap from="~right_thrust_cmd" to="right_thrust_cmd"/>
+            <remap from="~odom" to="p3d"/>
+        </node> -->
+    </group>
+</launch>

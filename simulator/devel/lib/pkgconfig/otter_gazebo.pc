@@ -1,0 +1,8 @@
+prefix=/home/yiheng/Projects/simulator/devel
+
+Name: otter_gazebo
+Description: Description of otter_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: otter_description usv_gazebo_plugins xacro roscpp message_filters robot_localization

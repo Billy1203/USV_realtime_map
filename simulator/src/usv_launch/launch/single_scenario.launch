@@ -1,0 +1,64 @@
+<launch>
+    <!-- topic of your odometry such as VIO or LIO -->
+    <arg name="odom_topic" value="p3d" />
+
+    <!-- Initial USV location and attitude-->
+    <arg name="init_x" default="-5.0" />
+    <arg name="init_y" default="-5.0" />
+
+    <!-- set map site and size -->
+    <arg name="map_size_x" default="100.0"/>
+	<arg name="map_size_y" default="100.0"/>
+    <arg name="map_origin_x" default="-50.0"/><!-- map coor origin-->
+	<arg name="map_origin_y" default="-50.0"/>
+    <arg name="pcd_origin_x" default="0.0"/><!--pcd-generator coor in world coor -->
+	<arg name="pcd_origin_y" default="0.0"/>
+
+    <!-- gazebo world -->
+    <include file="$(find otter_gazebo)/launch/gazebo_world.launch">
+        <arg name="world" value="$(find usv_worlds)/worlds/usv.world"/>
+        <arg name="gui" value="false"/>
+        <arg name="verbose" value="false"/>
+    </include>
+
+    <!-- map generation -->
+    <include file="$(find map_generator)/launch/simple_mapgen.launch">
+        <arg name="odom_topic" value="$(arg odom_topic)"/>
+        <arg name="pub_obs_srv" value="/pub_glb_obs"/>
+
+        <arg name="map_size_x" value="$(arg map_size_x)" />
+        <arg name="map_size_y" value="$(arg map_size_y)" />
+        <arg name="pcd_origin_x" value="$(arg pcd_origin_x)" />
+        <arg name="pcd_origin_y" value="$(arg pcd_origin_y)" />
+        <arg name="init_x" value="$(arg init_x)"/>
+        <arg name="init_y" value="$(arg init_y)"/>
+        <arg name="obs_num" value="10"/>
+    </include>
+
+    <!-- usv0 spawner -->
+    <include file="$(find usv_launch)/launch/usv_spawner.launch">
+        <arg name="usv_id" value="0"/>
+        <arg name="init_x" value="$(arg init_x)"/>
+        <arg name="init_y" value="$(arg init_y)"/>
+        <arg name="init_z" value="0.1"/>
+        <arg name="Y" value="0" /> <!-- yaw -->
+        <arg name="map_size_x" value="$(arg map_size_x)" />
+        <arg name="map_size_y" value="$(arg map_size_y)" />
+        <arg name="map_origin_x" value="$(arg map_origin_x)" /><!-- map coor origin-->
+        <arg name="map_origin_y" value="$(arg map_origin_y)" />
+        <arg name="odom_topic" value="$(arg odom_topic)"/>
+
+        <arg name="use_dubins_line" value="true"/>
+        <arg name="vel_limit"  value="4.5" />
+        <arg name="acc_limit"  value="4.5" />
+        <arg name="jerk_limit" value="25.0" />
+        <arg name="rho_time"   value="0.01" /><!-- cost-fun weight -->
+        <arg name="radius_between_states" value="3.0" />
+        <arg name="sampler_pos_hrz_var"   value="0.8" /><!-- pos-lateral-bias m-->
+        <arg name="sampler_vel_mag_mean"  value="4.5" /><!-- less than limits-->
+        <arg name="sampler_vel_mag_var"   value="1.0" /><!-- vel m/s-->
+        <arg name="sampler_vel_dir_var"   value="0.2" /><!-- vel dir bias rad-->
+    </include>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find usv_launch)/launch/default.rviz" required="true" />
+</launch>

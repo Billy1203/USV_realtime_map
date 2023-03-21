@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="usv_id"    default="0" />
+    <arg name="namespace" default="USV_$(arg usv_id)" />
+
+
+    <group ns = "/$(arg namespace)">
+        <!-- Keyboard teleop -->
+        <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" output="screen">
+          <param name="speed" value="1.0" />
+          <param name="turn"  value="1.0" />
+        </node>
+
+        <!-- Convert Twist messages to Drive messages -->
+        <node pkg="otter_gazebo" type="twist2thrust.py" name="twist2thrust" output="screen" args="--keyboard">
+          <remap from="left_cmd" to="/USV_0/left_thrust_cmd"/>
+          <remap from="right_cmd" to="/USV_0/right_thrust_cmd"/>
+        </node>
+    </group>
+
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/yiheng/Projects/simulator/devel
+
+Name: usv_gazebo_plugins
+Description: Description of usv_gazebo_plugins
+Version: 0.3.2
+Cflags: -I/home/yiheng/Projects/simulator/src/simulator/usv_gazebo_plugins/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime gazebo_dev roscpp
