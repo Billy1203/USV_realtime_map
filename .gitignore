@@ -1,6 +1,6 @@
-devel/
-logs/
-build/
+*/devel/
+*/logs/
+*/build/
 bin/
 lib/
 msg_gen/
@@ -49,3 +49,9 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
+
+
+
+
+.idea
+*/.idea
