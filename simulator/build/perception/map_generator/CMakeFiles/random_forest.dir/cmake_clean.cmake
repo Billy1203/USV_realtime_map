@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/yiheng/Projects/simulator/devel/lib/map_generator/random_forest"
-  "/home/yiheng/Projects/simulator/devel/lib/map_generator/random_forest.pdb"
+  "/home/yiheng/Projects/USV_realtime_map/simulator/devel/lib/map_generator/random_forest"
+  "/home/yiheng/Projects/USV_realtime_map/simulator/devel/lib/map_generator/random_forest.pdb"
   "CMakeFiles/random_forest.dir/src/random_forest_sensing.cpp.o"
   "CMakeFiles/random_forest.dir/src/random_forest_sensing.cpp.o.d"
 )

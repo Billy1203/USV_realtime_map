@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/yiheng/Projects/simulator/devel/lib/sensing/pcl_node"
-  "/home/yiheng/Projects/simulator/devel/lib/sensing/pcl_node.pdb"
+  "/home/yiheng/Projects/USV_realtime_map/simulator/devel/lib/sensing/pcl_node"
+  "/home/yiheng/Projects/USV_realtime_map/simulator/devel/lib/sensing/pcl_node.pdb"
   "CMakeFiles/pcl_node.dir/src/pointcloud_node.cpp.o"
   "CMakeFiles/pcl_node.dir/src/pointcloud_node.cpp.o.d"
 )

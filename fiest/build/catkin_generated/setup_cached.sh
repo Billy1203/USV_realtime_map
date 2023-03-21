@@ -7,8 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/yiheng/Projects/fiest/devel:$CMAKE_PREFIX_PATH"
+export CMAKE_PREFIX_PATH='/home/yiheng/Projects/USV_realtime_map/fiest/devel:/opt/ros/noetic'
 export LD_LIBRARY_PATH='/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu:/usr/local/cuda-11.4/lib64'
-export PWD='/home/yiheng/Projects/fiest/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/yiheng/Projects/fiest/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/yiheng/Projects/fiest/src:$ROS_PACKAGE_PATH"
+export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig'
+export PWD='/home/yiheng/Projects/USV_realtime_map/fiest/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/yiheng/Projects/USV_realtime_map/fiest/devel/share/common-lisp'
+export ROS_PACKAGE_PATH='/home/yiheng/Projects/USV_realtime_map/fiest/src:/opt/ros/noetic/share'

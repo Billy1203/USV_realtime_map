@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/yiheng/Projects/simulator/devel/lib/libbuoyancy_gazebo_plugin.pdb"
-  "/home/yiheng/Projects/simulator/devel/lib/libbuoyancy_gazebo_plugin.so"
+  "/home/yiheng/Projects/USV_realtime_map/simulator/devel/lib/libbuoyancy_gazebo_plugin.pdb"
+  "/home/yiheng/Projects/USV_realtime_map/simulator/devel/lib/libbuoyancy_gazebo_plugin.so"
   "CMakeFiles/buoyancy_gazebo_plugin.dir/src/buoyancy_gazebo_plugin.cc.o"
   "CMakeFiles/buoyancy_gazebo_plugin.dir/src/buoyancy_gazebo_plugin.cc.o.d"
 )

@@ -1,8 +1,8 @@
-prefix=/home/yiheng/Projects/simulator/devel
+prefix=/home/yiheng/Projects/USV_realtime_map/simulator/devel
 
 Name: usv_msgs
 Description: Description of usv_msgs
 Version: 0.0.0
-Cflags: -I/home/yiheng/Projects/simulator/devel/include
+Cflags: -I/home/yiheng/Projects/USV_realtime_map/simulator/devel/include
 Libs: -L${prefix}/lib 
 Requires: message_runtime std_msgs

@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "xacro".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "otter_description"
-PROJECT_SPACE_DIR = "/home/yiheng/Projects/simulator/install"
+PROJECT_SPACE_DIR = "/home/yiheng/Projects/USV_realtime_map/simulator/install"
 PROJECT_VERSION = "0.0.0"

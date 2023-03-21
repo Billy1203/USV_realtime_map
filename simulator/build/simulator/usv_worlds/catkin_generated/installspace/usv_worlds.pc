@@ -1,4 +1,4 @@
-prefix=/home/yiheng/Projects/simulator/install
+prefix=/home/yiheng/Projects/USV_realtime_map/simulator/install
 
 Name: usv_worlds
 Description: Description of usv_worlds

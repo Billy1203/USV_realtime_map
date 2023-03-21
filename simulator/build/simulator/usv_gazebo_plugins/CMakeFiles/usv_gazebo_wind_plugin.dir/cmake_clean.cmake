@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/yiheng/Projects/simulator/devel/lib/libusv_gazebo_wind_plugin.pdb"
-  "/home/yiheng/Projects/simulator/devel/lib/libusv_gazebo_wind_plugin.so"
+  "/home/yiheng/Projects/USV_realtime_map/simulator/devel/lib/libusv_gazebo_wind_plugin.pdb"
+  "/home/yiheng/Projects/USV_realtime_map/simulator/devel/lib/libusv_gazebo_wind_plugin.so"
   "CMakeFiles/usv_gazebo_wind_plugin.dir/src/usv_gazebo_wind_plugin.cc.o"
   "CMakeFiles/usv_gazebo_wind_plugin.dir/src/usv_gazebo_wind_plugin.cc.o.d"
 )

@@ -53,10 +53,10 @@ RM = /home/yiheng/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E rm 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yiheng/Projects/simulator/src
+CMAKE_SOURCE_DIR = /home/yiheng/Projects/USV_realtime_map/simulator/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yiheng/Projects/simulator/build
+CMAKE_BINARY_DIR = /home/yiheng/Projects/USV_realtime_map/simulator/build
 
 # Utility rule file for otter_description_xacro_generated_to_devel_space_.
 
@@ -74,10 +74,10 @@ simulator/otter_description/CMakeFiles/otter_description_xacro_generated_to_deve
 .PHONY : simulator/otter_description/CMakeFiles/otter_description_xacro_generated_to_devel_space_.dir/build
 
 simulator/otter_description/CMakeFiles/otter_description_xacro_generated_to_devel_space_.dir/clean:
-	cd /home/yiheng/Projects/simulator/build/simulator/otter_description && $(CMAKE_COMMAND) -P CMakeFiles/otter_description_xacro_generated_to_devel_space_.dir/cmake_clean.cmake
+	cd /home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/otter_description && $(CMAKE_COMMAND) -P CMakeFiles/otter_description_xacro_generated_to_devel_space_.dir/cmake_clean.cmake
 .PHONY : simulator/otter_description/CMakeFiles/otter_description_xacro_generated_to_devel_space_.dir/clean
 
 simulator/otter_description/CMakeFiles/otter_description_xacro_generated_to_devel_space_.dir/depend:
-	cd /home/yiheng/Projects/simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yiheng/Projects/simulator/src /home/yiheng/Projects/simulator/src/simulator/otter_description /home/yiheng/Projects/simulator/build /home/yiheng/Projects/simulator/build/simulator/otter_description /home/yiheng/Projects/simulator/build/simulator/otter_description/CMakeFiles/otter_description_xacro_generated_to_devel_space_.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yiheng/Projects/USV_realtime_map/simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yiheng/Projects/USV_realtime_map/simulator/src /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_description /home/yiheng/Projects/USV_realtime_map/simulator/build /home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/otter_description /home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/otter_description/CMakeFiles/otter_description_xacro_generated_to_devel_space_.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : simulator/otter_description/CMakeFiles/otter_description_xacro_generated_to_devel_space_.dir/depend
 

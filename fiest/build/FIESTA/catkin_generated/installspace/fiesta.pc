@@ -1,4 +1,4 @@
-prefix=/home/yiheng/Projects/fiest/install
+prefix=/home/yiheng/Projects/USV_realtime_map/fiest/install
 
 Name: fiesta
 Description: Description of fiesta

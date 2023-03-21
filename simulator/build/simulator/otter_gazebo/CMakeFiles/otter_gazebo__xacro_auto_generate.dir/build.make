@@ -53,10 +53,10 @@ RM = /home/yiheng/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E rm 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yiheng/Projects/simulator/src
+CMAKE_SOURCE_DIR = /home/yiheng/Projects/USV_realtime_map/simulator/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yiheng/Projects/simulator/build
+CMAKE_BINARY_DIR = /home/yiheng/Projects/USV_realtime_map/simulator/build
 
 # Utility rule file for otter_gazebo__xacro_auto_generate.
 
@@ -68,23 +68,23 @@ include simulator/otter_gazebo/CMakeFiles/otter_gazebo__xacro_auto_generate.dir/
 
 simulator/otter_gazebo/CMakeFiles/otter_gazebo__xacro_auto_generate: simulator/otter_gazebo/urdf/otter_gazebo.urdf
 
-simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/simulator/src/simulator/otter_gazebo/urdf/otter_gazebo.urdf.xacro
-simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/simulator/src/simulator/otter_description/urdf/parts.mininertia.urdf.xacro
-simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/simulator/src/simulator/otter_gazebo/urdf/sensors/otter_camera.xacro
-simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/simulator/src/simulator/otter_description/urdf/materials.urdf.xacro
-simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/simulator/src/simulator/otter_gazebo/urdf/sensors/otter_imu.xacro
-simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/simulator/src/simulator/otter_gazebo/urdf/sensors/otter_3d_lidar.xacro
-simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/simulator/src/simulator/otter_gazebo/urdf/sensors/otter_p3d.xacro
-simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/simulator/src/simulator/otter_gazebo/urdf/dynamics/otter_gazebo_wind_plugin.xacro
-simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/simulator/src/simulator/otter_description/urdf/propeller.xacro
-simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/simulator/src/simulator/otter_gazebo/urdf/sensors/otter_lidar.xacro
-simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/simulator/src/simulator/otter_gazebo/urdf/thrusters/otter_gazebo_thruster_plugin.xacro
-simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/simulator/src/simulator/otter_description/urdf/otter_base.urdf.xacro
-simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/simulator/src/simulator/otter_gazebo/urdf/sensors/otter_gps.xacro
-simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/simulator/src/simulator/otter_gazebo/urdf/thrusters/otter_gazebo_thruster_config.xacro
-simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/simulator/src/simulator/otter_gazebo/urdf/dynamics/otter_gazebo_dynamics_plugin.xacro
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yiheng/Projects/simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "xacro: generating urdf/otter_gazebo.urdf from urdf/otter_gazebo.urdf.xacro"
-	cd /home/yiheng/Projects/simulator/src/simulator/otter_gazebo && /home/yiheng/Projects/simulator/build/catkin_generated/env_cached.sh xacro -o /home/yiheng/Projects/simulator/build/simulator/otter_gazebo/urdf/otter_gazebo.urdf urdf/otter_gazebo.urdf.xacro
+simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo/urdf/otter_gazebo.urdf.xacro
+simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_description/urdf/propeller.xacro
+simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo/urdf/thrusters/otter_gazebo_thruster_plugin.xacro
+simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo/urdf/sensors/otter_3d_lidar.xacro
+simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo/urdf/dynamics/otter_gazebo_wind_plugin.xacro
+simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo/urdf/sensors/otter_camera.xacro
+simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo/urdf/dynamics/otter_gazebo_dynamics_plugin.xacro
+simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_description/urdf/parts.mininertia.urdf.xacro
+simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo/urdf/thrusters/otter_gazebo_thruster_config.xacro
+simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_description/urdf/otter_base.urdf.xacro
+simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo/urdf/sensors/otter_p3d.xacro
+simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo/urdf/sensors/otter_gps.xacro
+simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_description/urdf/materials.urdf.xacro
+simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo/urdf/sensors/otter_imu.xacro
+simulator/otter_gazebo/urdf/otter_gazebo.urdf: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo/urdf/sensors/otter_lidar.xacro
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "xacro: generating urdf/otter_gazebo.urdf from urdf/otter_gazebo.urdf.xacro"
+	cd /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo && /home/yiheng/Projects/USV_realtime_map/simulator/build/catkin_generated/env_cached.sh xacro -o /home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/otter_gazebo/urdf/otter_gazebo.urdf urdf/otter_gazebo.urdf.xacro
 
 otter_gazebo__xacro_auto_generate: simulator/otter_gazebo/CMakeFiles/otter_gazebo__xacro_auto_generate
 otter_gazebo__xacro_auto_generate: simulator/otter_gazebo/urdf/otter_gazebo.urdf
@@ -96,10 +96,10 @@ simulator/otter_gazebo/CMakeFiles/otter_gazebo__xacro_auto_generate.dir/build: o
 .PHONY : simulator/otter_gazebo/CMakeFiles/otter_gazebo__xacro_auto_generate.dir/build
 
 simulator/otter_gazebo/CMakeFiles/otter_gazebo__xacro_auto_generate.dir/clean:
-	cd /home/yiheng/Projects/simulator/build/simulator/otter_gazebo && $(CMAKE_COMMAND) -P CMakeFiles/otter_gazebo__xacro_auto_generate.dir/cmake_clean.cmake
+	cd /home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/otter_gazebo && $(CMAKE_COMMAND) -P CMakeFiles/otter_gazebo__xacro_auto_generate.dir/cmake_clean.cmake
 .PHONY : simulator/otter_gazebo/CMakeFiles/otter_gazebo__xacro_auto_generate.dir/clean
 
 simulator/otter_gazebo/CMakeFiles/otter_gazebo__xacro_auto_generate.dir/depend:
-	cd /home/yiheng/Projects/simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yiheng/Projects/simulator/src /home/yiheng/Projects/simulator/src/simulator/otter_gazebo /home/yiheng/Projects/simulator/build /home/yiheng/Projects/simulator/build/simulator/otter_gazebo /home/yiheng/Projects/simulator/build/simulator/otter_gazebo/CMakeFiles/otter_gazebo__xacro_auto_generate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yiheng/Projects/USV_realtime_map/simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yiheng/Projects/USV_realtime_map/simulator/src /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo /home/yiheng/Projects/USV_realtime_map/simulator/build /home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/otter_gazebo /home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/otter_gazebo/CMakeFiles/otter_gazebo__xacro_auto_generate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : simulator/otter_gazebo/CMakeFiles/otter_gazebo__xacro_auto_generate.dir/depend
 

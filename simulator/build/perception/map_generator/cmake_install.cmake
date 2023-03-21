@@ -1,8 +1,8 @@
-# Install script for directory: /home/yiheng/Projects/simulator/src/perception/map_generator
+# Install script for directory: /home/yiheng/Projects/USV_realtime_map/simulator/src/perception/map_generator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yiheng/Projects/simulator/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yiheng/Projects/USV_realtime_map/simulator/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,17 +43,17 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yiheng/Projects/simulator/build/perception/map_generator/catkin_generated/installspace/map_generator.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yiheng/Projects/USV_realtime_map/simulator/build/perception/map_generator/catkin_generated/installspace/map_generator.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/map_generator/cmake" TYPE FILE FILES
-    "/home/yiheng/Projects/simulator/build/perception/map_generator/catkin_generated/installspace/map_generatorConfig.cmake"
-    "/home/yiheng/Projects/simulator/build/perception/map_generator/catkin_generated/installspace/map_generatorConfig-version.cmake"
+    "/home/yiheng/Projects/USV_realtime_map/simulator/build/perception/map_generator/catkin_generated/installspace/map_generatorConfig.cmake"
+    "/home/yiheng/Projects/USV_realtime_map/simulator/build/perception/map_generator/catkin_generated/installspace/map_generatorConfig-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/map_generator" TYPE FILE FILES "/home/yiheng/Projects/simulator/src/perception/map_generator/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/map_generator" TYPE FILE FILES "/home/yiheng/Projects/USV_realtime_map/simulator/src/perception/map_generator/package.xml")
 endif()
 

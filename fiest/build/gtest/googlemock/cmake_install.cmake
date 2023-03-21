@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yiheng/Projects/fiest/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yiheng/Projects/USV_realtime_map/fiest/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/yiheng/Projects/fiest/build/gtest/googletest/cmake_install.cmake")
+  include("/home/yiheng/Projects/USV_realtime_map/fiest/build/gtest/googletest/cmake_install.cmake")
 
 endif()
 

@@ -53,10 +53,10 @@ RM = /home/yiheng/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E rm 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yiheng/Projects/simulator/src
+CMAKE_SOURCE_DIR = /home/yiheng/Projects/USV_realtime_map/simulator/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yiheng/Projects/simulator/build
+CMAKE_BINARY_DIR = /home/yiheng/Projects/USV_realtime_map/simulator/build
 
 # Utility rule file for actionlib_generate_messages_nodejs.
 
@@ -74,10 +74,10 @@ usv_control/otter_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/buil
 .PHONY : usv_control/otter_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
 
 usv_control/otter_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean:
-	cd /home/yiheng/Projects/simulator/build/usv_control/otter_control && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/yiheng/Projects/USV_realtime_map/simulator/build/usv_control/otter_control && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : usv_control/otter_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean
 
 usv_control/otter_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/depend:
-	cd /home/yiheng/Projects/simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yiheng/Projects/simulator/src /home/yiheng/Projects/simulator/src/usv_control/otter_control /home/yiheng/Projects/simulator/build /home/yiheng/Projects/simulator/build/usv_control/otter_control /home/yiheng/Projects/simulator/build/usv_control/otter_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yiheng/Projects/USV_realtime_map/simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yiheng/Projects/USV_realtime_map/simulator/src /home/yiheng/Projects/USV_realtime_map/simulator/src/usv_control/otter_control /home/yiheng/Projects/USV_realtime_map/simulator/build /home/yiheng/Projects/USV_realtime_map/simulator/build/usv_control/otter_control /home/yiheng/Projects/USV_realtime_map/simulator/build/usv_control/otter_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : usv_control/otter_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/depend
 

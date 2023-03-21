@@ -1,2 +1,2 @@
 FIESTA
--DCATKIN_DEVEL_PREFIX=/home/yiheng/Projects/fiest/devel -DCMAKE_INSTALL_PREFIX=/home/yiheng/Projects/fiest/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/yiheng/Projects/USV_realtime_map/fiest/devel -DCMAKE_INSTALL_PREFIX=/home/yiheng/Projects/USV_realtime_map/fiest/install -G Unix Makefiles

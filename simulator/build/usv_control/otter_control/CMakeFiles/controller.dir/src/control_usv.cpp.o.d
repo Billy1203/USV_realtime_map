@@ -1,7 +1,7 @@
 usv_control/otter_control/CMakeFiles/controller.dir/src/control_usv.cpp.o: \
- /home/yiheng/Projects/simulator/src/usv_control/otter_control/src/control_usv.cpp \
+ /home/yiheng/Projects/USV_realtime_map/simulator/src/usv_control/otter_control/src/control_usv.cpp \
  /usr/include/stdc-predef.h \
- /home/yiheng/Projects/simulator/src/usv_control/otter_control/include/otter_control/control_usv.h \
+ /home/yiheng/Projects/USV_realtime_map/simulator/src/usv_control/otter_control/include/otter_control/control_usv.h \
  /opt/ros/noetic/include/ros/ros.h /opt/ros/noetic/include/ros/time.h \
  /opt/ros/noetic/include/ros/platform.h /usr/include/c++/9/stdlib.h \
  /usr/include/c++/9/cstdlib \
@@ -1102,7 +1102,7 @@ usv_control/otter_control/CMakeFiles/controller.dir/src/control_usv.cpp.o: \
  /opt/ros/noetic/include/geometry_msgs/Vector3.h \
  /opt/ros/noetic/include/sensor_msgs/Imu.h \
  /opt/ros/noetic/include/geometry_msgs/Quaternion.h \
- /home/yiheng/Projects/simulator/devel/include/usv_msgs/SpeedCourse.h \
+ /home/yiheng/Projects/USV_realtime_map/simulator/devel/include/usv_msgs/SpeedCourse.h \
  /opt/ros/noetic/include/nav_msgs/Odometry.h \
  /opt/ros/noetic/include/geometry_msgs/PoseWithCovariance.h \
  /opt/ros/noetic/include/geometry_msgs/Pose.h \

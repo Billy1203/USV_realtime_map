@@ -1,8 +1,8 @@
-# Install script for directory: /home/yiheng/Projects/simulator/src/usv_launch
+# Install script for directory: /home/yiheng/Projects/USV_realtime_map/simulator/src/usv_launch
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yiheng/Projects/simulator/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yiheng/Projects/USV_realtime_map/simulator/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,17 +43,17 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yiheng/Projects/simulator/build/usv_launch/catkin_generated/installspace/usv_launch.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yiheng/Projects/USV_realtime_map/simulator/build/usv_launch/catkin_generated/installspace/usv_launch.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usv_launch/cmake" TYPE FILE FILES
-    "/home/yiheng/Projects/simulator/build/usv_launch/catkin_generated/installspace/usv_launchConfig.cmake"
-    "/home/yiheng/Projects/simulator/build/usv_launch/catkin_generated/installspace/usv_launchConfig-version.cmake"
+    "/home/yiheng/Projects/USV_realtime_map/simulator/build/usv_launch/catkin_generated/installspace/usv_launchConfig.cmake"
+    "/home/yiheng/Projects/USV_realtime_map/simulator/build/usv_launch/catkin_generated/installspace/usv_launchConfig-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usv_launch" TYPE FILE FILES "/home/yiheng/Projects/simulator/src/usv_launch/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usv_launch" TYPE FILE FILES "/home/yiheng/Projects/USV_realtime_map/simulator/src/usv_launch/package.xml")
 endif()
 

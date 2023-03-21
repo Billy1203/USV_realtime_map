@@ -1,8 +1,8 @@
-prefix=/home/yiheng/Projects/fiest/devel
+prefix=/home/yiheng/Projects/USV_realtime_map/fiest/devel
 
 Name: fiesta
 Description: Description of fiesta
 Version: 0.0.1
-Cflags: -I/home/yiheng/Projects/fiest/src/FIESTA/include
+Cflags: -I/home/yiheng/Projects/USV_realtime_map/fiest/src/FIESTA/include
 Libs: -L${prefix}/lib 
 Requires: 

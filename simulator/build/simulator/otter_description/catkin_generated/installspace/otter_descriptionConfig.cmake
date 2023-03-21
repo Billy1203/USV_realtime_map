@@ -67,14 +67,14 @@ set(otter_description_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(otter_description_SOURCE_PREFIX /home/yiheng/Projects/simulator/src/simulator/otter_description)
-  set(otter_description_DEVEL_PREFIX /home/yiheng/Projects/simulator/devel)
+  set(otter_description_SOURCE_PREFIX /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_description)
+  set(otter_description_DEVEL_PREFIX /home/yiheng/Projects/USV_realtime_map/simulator/devel)
   set(otter_description_INSTALL_PREFIX "")
   set(otter_description_PREFIX ${otter_description_DEVEL_PREFIX})
 else()
   set(otter_description_SOURCE_PREFIX "")
   set(otter_description_DEVEL_PREFIX "")
-  set(otter_description_INSTALL_PREFIX /home/yiheng/Projects/simulator/install)
+  set(otter_description_INSTALL_PREFIX /home/yiheng/Projects/USV_realtime_map/simulator/install)
   set(otter_description_PREFIX ${otter_description_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/yiheng/Projects/simulator/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/yiheng/Projects/USV_realtime_map/simulator/install/lib;/home/yiheng/Projects/USV_realtime_map/simulator/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

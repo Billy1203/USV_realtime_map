@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/yiheng/Projects/simulator/devel/share/gennodejs/ros/usv_msgs/msg/MPCCommand.js"
-  "/home/yiheng/Projects/simulator/devel/share/gennodejs/ros/usv_msgs/msg/PolynomialTrajectory.js"
-  "/home/yiheng/Projects/simulator/devel/share/gennodejs/ros/usv_msgs/msg/ThrustCommand.js"
-  "/home/yiheng/Projects/simulator/devel/share/gennodejs/ros/usv_msgs/srv/GlbObsRcv.js"
+  "/home/yiheng/Projects/USV_realtime_map/simulator/devel/share/gennodejs/ros/usv_msgs/msg/MPCCommand.js"
+  "/home/yiheng/Projects/USV_realtime_map/simulator/devel/share/gennodejs/ros/usv_msgs/msg/PolynomialTrajectory.js"
+  "/home/yiheng/Projects/USV_realtime_map/simulator/devel/share/gennodejs/ros/usv_msgs/msg/ThrustCommand.js"
+  "/home/yiheng/Projects/USV_realtime_map/simulator/devel/share/gennodejs/ros/usv_msgs/srv/GlbObsRcv.js"
   "CMakeFiles/usv_msgs_generate_messages_nodejs"
 )
 

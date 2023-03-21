@@ -1,8 +1,8 @@
-# Install script for directory: /home/yiheng/Projects/simulator/src/simulator/otter_gazebo
+# Install script for directory: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yiheng/Projects/simulator/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yiheng/Projects/USV_realtime_map/simulator/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,33 +43,33 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yiheng/Projects/simulator/build/simulator/otter_gazebo/catkin_generated/installspace/otter_gazebo.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/otter_gazebo/catkin_generated/installspace/otter_gazebo.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/otter_gazebo/cmake" TYPE FILE FILES
-    "/home/yiheng/Projects/simulator/build/simulator/otter_gazebo/catkin_generated/installspace/otter_gazeboConfig.cmake"
-    "/home/yiheng/Projects/simulator/build/simulator/otter_gazebo/catkin_generated/installspace/otter_gazeboConfig-version.cmake"
+    "/home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/otter_gazebo/catkin_generated/installspace/otter_gazeboConfig.cmake"
+    "/home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/otter_gazebo/catkin_generated/installspace/otter_gazeboConfig-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/otter_gazebo" TYPE FILE FILES "/home/yiheng/Projects/simulator/src/simulator/otter_gazebo/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/otter_gazebo" TYPE FILE FILES "/home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/otter_gazebo/urdf" TYPE FILE FILES "/home/yiheng/Projects/simulator/build/simulator/otter_gazebo/urdf/otter_gazebo.urdf")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/otter_gazebo/urdf" TYPE FILE FILES "/home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/otter_gazebo/urdf/otter_gazebo.urdf")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/otter_gazebo/urdf" TYPE DIRECTORY FILES "/home/yiheng/Projects/simulator/src/simulator/otter_gazebo/urdf/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/otter_gazebo/urdf" TYPE DIRECTORY FILES "/home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo/urdf/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/otter_gazebo/config" TYPE DIRECTORY FILES "/home/yiheng/Projects/simulator/src/simulator/otter_gazebo/config/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/otter_gazebo/config" TYPE DIRECTORY FILES "/home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo/config/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/otter_gazebo/launch" TYPE DIRECTORY FILES "/home/yiheng/Projects/simulator/src/simulator/otter_gazebo/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/otter_gazebo/launch" TYPE DIRECTORY FILES "/home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_gazebo/launch/")
 endif()
 

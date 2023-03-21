@@ -67,14 +67,14 @@ set(usv_worlds_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(usv_worlds_SOURCE_PREFIX /home/yiheng/Projects/simulator/src/simulator/usv_worlds)
-  set(usv_worlds_DEVEL_PREFIX /home/yiheng/Projects/simulator/devel)
+  set(usv_worlds_SOURCE_PREFIX /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds)
+  set(usv_worlds_DEVEL_PREFIX /home/yiheng/Projects/USV_realtime_map/simulator/devel)
   set(usv_worlds_INSTALL_PREFIX "")
   set(usv_worlds_PREFIX ${usv_worlds_DEVEL_PREFIX})
 else()
   set(usv_worlds_SOURCE_PREFIX "")
   set(usv_worlds_DEVEL_PREFIX "")
-  set(usv_worlds_INSTALL_PREFIX /home/yiheng/Projects/simulator/install)
+  set(usv_worlds_INSTALL_PREFIX /home/yiheng/Projects/USV_realtime_map/simulator/install)
   set(usv_worlds_PREFIX ${usv_worlds_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/yiheng/Projects/simulator/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/yiheng/Projects/USV_realtime_map/simulator/install/lib;/home/yiheng/Projects/USV_realtime_map/simulator/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -53,10 +53,10 @@ RM = /home/yiheng/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E rm 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yiheng/Projects/simulator/src
+CMAKE_SOURCE_DIR = /home/yiheng/Projects/USV_realtime_map/simulator/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yiheng/Projects/simulator/build
+CMAKE_BINARY_DIR = /home/yiheng/Projects/USV_realtime_map/simulator/build
 
 # Utility rule file for usv_worlds__xacro_auto_generate.
 
@@ -70,21 +70,21 @@ simulator/usv_worlds/CMakeFiles/usv_worlds__xacro_auto_generate: simulator/usv_w
 simulator/usv_worlds/CMakeFiles/usv_worlds__xacro_auto_generate: simulator/usv_worlds/worlds/usv_fast.world
 simulator/usv_worlds/CMakeFiles/usv_worlds__xacro_auto_generate: simulator/usv_worlds/worlds/usv_river.world
 
-simulator/usv_worlds/worlds/usv.world: /home/yiheng/Projects/simulator/src/simulator/usv_worlds/worlds/usv.world.xacro
-simulator/usv_worlds/worlds/usv.world: /home/yiheng/Projects/simulator/src/simulator/usv_worlds/worlds/simple_box.xacro
-simulator/usv_worlds/worlds/usv.world: /home/yiheng/Projects/simulator/src/simulator/usv_worlds/worlds/simple_obstacles.xacro
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yiheng/Projects/simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "xacro: generating worlds/usv.world from worlds/usv.world.xacro"
-	cd /home/yiheng/Projects/simulator/src/simulator/usv_worlds && /home/yiheng/Projects/simulator/build/catkin_generated/env_cached.sh xacro -o /home/yiheng/Projects/simulator/build/simulator/usv_worlds/worlds/usv.world worlds/usv.world.xacro
+simulator/usv_worlds/worlds/usv.world: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/worlds/usv.world.xacro
+simulator/usv_worlds/worlds/usv.world: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/worlds/simple_box.xacro
+simulator/usv_worlds/worlds/usv.world: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/worlds/simple_obstacles.xacro
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "xacro: generating worlds/usv.world from worlds/usv.world.xacro"
+	cd /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds && /home/yiheng/Projects/USV_realtime_map/simulator/build/catkin_generated/env_cached.sh xacro -o /home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/usv_worlds/worlds/usv.world worlds/usv.world.xacro
 
-simulator/usv_worlds/worlds/usv_fast.world: /home/yiheng/Projects/simulator/src/simulator/usv_worlds/worlds/usv_fast.world.xacro
-simulator/usv_worlds/worlds/usv_fast.world: /home/yiheng/Projects/simulator/src/simulator/usv_worlds/worlds/simple_box.xacro
-simulator/usv_worlds/worlds/usv_fast.world: /home/yiheng/Projects/simulator/src/simulator/usv_worlds/worlds/simple_obstacles.xacro
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yiheng/Projects/simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "xacro: generating worlds/usv_fast.world from worlds/usv_fast.world.xacro"
-	cd /home/yiheng/Projects/simulator/src/simulator/usv_worlds && /home/yiheng/Projects/simulator/build/catkin_generated/env_cached.sh xacro -o /home/yiheng/Projects/simulator/build/simulator/usv_worlds/worlds/usv_fast.world worlds/usv_fast.world.xacro
+simulator/usv_worlds/worlds/usv_fast.world: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/worlds/usv_fast.world.xacro
+simulator/usv_worlds/worlds/usv_fast.world: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/worlds/simple_obstacles.xacro
+simulator/usv_worlds/worlds/usv_fast.world: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/worlds/simple_box.xacro
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "xacro: generating worlds/usv_fast.world from worlds/usv_fast.world.xacro"
+	cd /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds && /home/yiheng/Projects/USV_realtime_map/simulator/build/catkin_generated/env_cached.sh xacro -o /home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/usv_worlds/worlds/usv_fast.world worlds/usv_fast.world.xacro
 
-simulator/usv_worlds/worlds/usv_river.world: /home/yiheng/Projects/simulator/src/simulator/usv_worlds/worlds/usv_river.world.xacro
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yiheng/Projects/simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "xacro: generating worlds/usv_river.world from worlds/usv_river.world.xacro"
-	cd /home/yiheng/Projects/simulator/src/simulator/usv_worlds && /home/yiheng/Projects/simulator/build/catkin_generated/env_cached.sh xacro -o /home/yiheng/Projects/simulator/build/simulator/usv_worlds/worlds/usv_river.world worlds/usv_river.world.xacro
+simulator/usv_worlds/worlds/usv_river.world: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/worlds/usv_river.world.xacro
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yiheng/Projects/USV_realtime_map/simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "xacro: generating worlds/usv_river.world from worlds/usv_river.world.xacro"
+	cd /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds && /home/yiheng/Projects/USV_realtime_map/simulator/build/catkin_generated/env_cached.sh xacro -o /home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/usv_worlds/worlds/usv_river.world worlds/usv_river.world.xacro
 
 usv_worlds__xacro_auto_generate: simulator/usv_worlds/CMakeFiles/usv_worlds__xacro_auto_generate
 usv_worlds__xacro_auto_generate: simulator/usv_worlds/worlds/usv.world
@@ -98,10 +98,10 @@ simulator/usv_worlds/CMakeFiles/usv_worlds__xacro_auto_generate.dir/build: usv_w
 .PHONY : simulator/usv_worlds/CMakeFiles/usv_worlds__xacro_auto_generate.dir/build
 
 simulator/usv_worlds/CMakeFiles/usv_worlds__xacro_auto_generate.dir/clean:
-	cd /home/yiheng/Projects/simulator/build/simulator/usv_worlds && $(CMAKE_COMMAND) -P CMakeFiles/usv_worlds__xacro_auto_generate.dir/cmake_clean.cmake
+	cd /home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/usv_worlds && $(CMAKE_COMMAND) -P CMakeFiles/usv_worlds__xacro_auto_generate.dir/cmake_clean.cmake
 .PHONY : simulator/usv_worlds/CMakeFiles/usv_worlds__xacro_auto_generate.dir/clean
 
 simulator/usv_worlds/CMakeFiles/usv_worlds__xacro_auto_generate.dir/depend:
-	cd /home/yiheng/Projects/simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yiheng/Projects/simulator/src /home/yiheng/Projects/simulator/src/simulator/usv_worlds /home/yiheng/Projects/simulator/build /home/yiheng/Projects/simulator/build/simulator/usv_worlds /home/yiheng/Projects/simulator/build/simulator/usv_worlds/CMakeFiles/usv_worlds__xacro_auto_generate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yiheng/Projects/USV_realtime_map/simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yiheng/Projects/USV_realtime_map/simulator/src /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds /home/yiheng/Projects/USV_realtime_map/simulator/build /home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/usv_worlds /home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/usv_worlds/CMakeFiles/usv_worlds__xacro_auto_generate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : simulator/usv_worlds/CMakeFiles/usv_worlds__xacro_auto_generate.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/yiheng/Projects/simulator/src/simulator/usv_worlds
+# Install script for directory: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yiheng/Projects/simulator/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yiheng/Projects/USV_realtime_map/simulator/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,41 +43,41 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yiheng/Projects/simulator/build/simulator/usv_worlds/catkin_generated/installspace/usv_worlds.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/usv_worlds/catkin_generated/installspace/usv_worlds.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usv_worlds/cmake" TYPE FILE FILES
-    "/home/yiheng/Projects/simulator/build/simulator/usv_worlds/catkin_generated/installspace/usv_worldsConfig.cmake"
-    "/home/yiheng/Projects/simulator/build/simulator/usv_worlds/catkin_generated/installspace/usv_worldsConfig-version.cmake"
+    "/home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/usv_worlds/catkin_generated/installspace/usv_worldsConfig.cmake"
+    "/home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/usv_worlds/catkin_generated/installspace/usv_worldsConfig-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usv_worlds" TYPE FILE FILES "/home/yiheng/Projects/simulator/src/simulator/usv_worlds/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usv_worlds" TYPE FILE FILES "/home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usv_worlds/worlds" TYPE FILE FILES
-    "/home/yiheng/Projects/simulator/build/simulator/usv_worlds/worlds/usv.world"
-    "/home/yiheng/Projects/simulator/build/simulator/usv_worlds/worlds/usv_fast.world"
-    "/home/yiheng/Projects/simulator/build/simulator/usv_worlds/worlds/usv_river.world"
+    "/home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/usv_worlds/worlds/usv.world"
+    "/home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/usv_worlds/worlds/usv_fast.world"
+    "/home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/usv_worlds/worlds/usv_river.world"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usv_worlds/config" TYPE DIRECTORY FILES "/home/yiheng/Projects/simulator/src/simulator/usv_worlds/config/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usv_worlds/config" TYPE DIRECTORY FILES "/home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/config/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usv_worlds/worlds" TYPE DIRECTORY FILES "/home/yiheng/Projects/simulator/src/simulator/usv_worlds/worlds/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usv_worlds/worlds" TYPE DIRECTORY FILES "/home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/worlds/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usv_worlds/models" TYPE DIRECTORY FILES "/home/yiheng/Projects/simulator/src/simulator/usv_worlds/models/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usv_worlds/models" TYPE DIRECTORY FILES "/home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/models/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usv_worlds/launch" TYPE DIRECTORY FILES "/home/yiheng/Projects/simulator/src/simulator/usv_worlds/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usv_worlds/launch" TYPE DIRECTORY FILES "/home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/usv_worlds/launch/")
 endif()
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/yiheng/Projects/simulator/src/simulator/otter_description
+# Install script for directory: /home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yiheng/Projects/simulator/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yiheng/Projects/USV_realtime_map/simulator/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,24 +43,24 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yiheng/Projects/simulator/build/simulator/otter_description/catkin_generated/installspace/otter_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/otter_description/catkin_generated/installspace/otter_description.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/otter_description/cmake" TYPE FILE FILES
-    "/home/yiheng/Projects/simulator/build/simulator/otter_description/catkin_generated/installspace/otter_descriptionConfig.cmake"
-    "/home/yiheng/Projects/simulator/build/simulator/otter_description/catkin_generated/installspace/otter_descriptionConfig-version.cmake"
+    "/home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/otter_description/catkin_generated/installspace/otter_descriptionConfig.cmake"
+    "/home/yiheng/Projects/USV_realtime_map/simulator/build/simulator/otter_description/catkin_generated/installspace/otter_descriptionConfig-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/otter_description" TYPE FILE FILES "/home/yiheng/Projects/simulator/src/simulator/otter_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/otter_description" TYPE FILE FILES "/home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_description/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/otter_description" TYPE DIRECTORY FILES
-    "/home/yiheng/Projects/simulator/src/simulator/otter_description/meshes"
-    "/home/yiheng/Projects/simulator/src/simulator/otter_description/urdf"
+    "/home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_description/meshes"
+    "/home/yiheng/Projects/USV_realtime_map/simulator/src/simulator/otter_description/urdf"
     )
 endif()
 

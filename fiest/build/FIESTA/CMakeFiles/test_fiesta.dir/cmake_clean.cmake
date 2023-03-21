@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/yiheng/Projects/fiest/devel/lib/fiesta/test_fiesta"
-  "/home/yiheng/Projects/fiest/devel/lib/fiesta/test_fiesta.pdb"
+  "/home/yiheng/Projects/USV_realtime_map/fiest/devel/lib/fiesta/test_fiesta"
+  "/home/yiheng/Projects/USV_realtime_map/fiest/devel/lib/fiesta/test_fiesta.pdb"
   "CMakeFiles/test_fiesta.dir/src/ESDFMap.cpp.o"
   "CMakeFiles/test_fiesta.dir/src/ESDFMap.cpp.o.d"
   "CMakeFiles/test_fiesta.dir/src/parameters.cpp.o"
