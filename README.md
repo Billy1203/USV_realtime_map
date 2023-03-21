@@ -5,8 +5,11 @@
 **Description**
 
 Build ESDF map in USV simulator in real-time. ESDF method forked [FIESTA](https://github.com/HKUST-Aerial-Robotics/FIESTA), simulator forked from TaoHuang@HiZJU.
+
 Topic 1: `/USV_0/lidar_3d/points`, PointCloud2
+
 Topic 2: `/USV_0/pcl_node/Transform_esdf`, TF2 pose
+
 Topic 3: `/USV_0/top_camera/image_raw`, image
 
 ### Build Simulator
