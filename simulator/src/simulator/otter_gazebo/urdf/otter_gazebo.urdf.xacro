@@ -50,7 +50,7 @@
 
   <!-- Add a front camera -->
   <xacro:if value="$(arg top_camera_enabled)">
-    <xacro:otter_camera name="top_camera" y="0.0" x="-0.07" z="0.7" P="${radians(0)}" />
+    <xacro:otter_camera name="top_camera" y="0.0" x="0.2" z="0.7" P="${radians(0)}" />
   </xacro:if>
 
   <!-- Add simulated GPS -->

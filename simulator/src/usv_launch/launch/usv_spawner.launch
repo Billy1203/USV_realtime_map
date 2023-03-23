@@ -5,6 +5,7 @@
 
     <!-- topic of your odometry such as VIO or LIO -->
     <arg name="odom_topic" default="p3d" />
+
     <!-- topic of your localsense -->
     <arg name="cloud_topic" default="pcl_node/cloud" />
     <arg name="local_sense" default="20.0" />
@@ -75,10 +76,8 @@
                 <param name="namespace" value="$(arg namespace)"/>
                 <param name="sensor_range" value="$(arg local_sense)"/>
             </node>
-        
+
             <!-- planner -->
-
-
             <!-- pid code need tidy up -->
             <!-- <node pkg="otter_control" name="controller" type="controller" output="screen">
                 <remap from="~left_thrust_cmd" to="left_thrust_cmd" />

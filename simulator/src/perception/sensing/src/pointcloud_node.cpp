@@ -242,13 +242,13 @@ void rcvLocalPointCloudCallBack(const sensor_msgs::PointCloud2& pointcloud_map) 
     _local_map.width = _local_map.points.size();
     _local_map.height = 1;
     _local_map.is_dense = true;
-    // pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_filtered_inliers (new pcl::PointCloud<pcl::PointXYZ>);  
+    // pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_filtered_inliers (new pcl::PointCloud<pcl::PointXYZ>);
     // // Create the filtering object
     // pcl::StatisticalOutlierRemoval<pcl::PointXYZ> sor;
     // sor.setInputCloud (_local_map.makeShared());  //设置输入
     // sor.setMeanK (15);  //设置用于平均距离估计的 KD-tree最近邻搜索点的个数.
-    // sor.setStddevMulThresh (1.0); //高斯分布标准差的倍数, 也就是 u+1*sigma,u+2*sigma,u+3*sigma 中的 倍数1、2、3 
-    // sor.filter (*cloud_filtered_inliers); // 滤波后输出 
+    // sor.setStddevMulThresh (1.0); //高斯分布标准差的倍数, 也就是 u+1*sigma,u+2*sigma,u+3*sigma 中的 倍数1、2、3
+    // sor.filter (*cloud_filtered_inliers); // 滤波后输出
 
     // 平面range处理
     // pcl::PointCloud<pcl::PointXYZ> map_pc = PointCloudRange(*cloud_filtered_inliers);
@@ -280,7 +280,6 @@ int main(int argc, char** argv) {
     
     listener_ptr.reset(new tf::TransformListener(nh));
     listener_ptr->setExtrapolationLimit(ros::Duration(0.1));
-
 
     ros::spin();
 }

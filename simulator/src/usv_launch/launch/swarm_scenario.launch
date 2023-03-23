@@ -19,6 +19,7 @@
         <arg name="odom_topic" value="$(arg odom_topic)"/>
     </include>
 
+    <!-- usv1 spawner -->
     <include file="$(find usv_launch)/launch/usv_spawner.launch">
         <arg name="usv_id" value="1"/>
         <arg name="init_x" value="8.0"/>
@@ -28,5 +29,6 @@
         <arg name="odom_topic" value="$(arg odom_topic)"/>
     </include>
 
-    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find otter_gazebo)/launch/default.rviz" required="true" />
+    <!-- default rviz config -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find usv_launch)/launch/default.rviz" required="true" />
 </launch>

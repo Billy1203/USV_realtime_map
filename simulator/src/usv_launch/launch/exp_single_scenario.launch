@@ -24,8 +24,7 @@
     <!-- map generation -->
     <include file="$(find map_generator)/launch/simple_mapgen.launch">
         <arg name="odom_topic" value="$(arg odom_topic)"/>
-        <arg name="pub_obs_srv" value="/pub_glb_obs"/>
-
+        <arg name="pub_obs_srv" value="pub_glb_obs"/>
         <arg name="map_size_x" value="$(arg map_size_x)" />
         <arg name="map_size_y" value="$(arg map_size_y)" />
         <arg name="pcd_origin_x" value="$(arg pcd_origin_x)" />
