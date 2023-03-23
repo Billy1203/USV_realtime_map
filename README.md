@@ -59,3 +59,5 @@ roslaunch fiesta usv_simulator.launch # subsecribe the previous two topics
 
 ![figure2](./figure/figure2.png)
 
+![figure3](./figure/1.gif)
+
