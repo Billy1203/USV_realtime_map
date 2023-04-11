@@ -13,7 +13,7 @@
     <include file="$(find usv_launch)/launch/usv_spawner.launch">
         <arg name="usv_id" value="0"/>
         <arg name="init_x" value="-5.0"/>
-        <arg name="init_y" value="-5.0"/>
+        <arg name="init_y" value="0"/>
         <arg name="init_z" value="0.1"/>
         <arg name="Y" value="0" />
         <arg name="odom_topic" value="$(arg odom_topic)"/>
@@ -22,8 +22,8 @@
     <!-- usv1 spawner -->
     <include file="$(find usv_launch)/launch/usv_spawner.launch">
         <arg name="usv_id" value="1"/>
-        <arg name="init_x" value="8.0"/>
-        <arg name="init_y" value="-5.0"/>
+        <arg name="init_x" value="3.0"/>
+        <arg name="init_y" value="-2.0"/>
         <arg name="init_z" value="0.1"/>
         <arg name="Y" value="0" />
         <arg name="odom_topic" value="$(arg odom_topic)"/>
