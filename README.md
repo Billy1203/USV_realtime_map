@@ -1,4 +1,4 @@
-# USV Real-time Map if Gazebo
+# USV Real-time Map in Gazebo
 
 ![figure1](./figure/figure1.jpg)
 
